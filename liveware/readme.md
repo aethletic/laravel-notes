@@ -41,6 +41,8 @@ Paste this in `composer.json` file:
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer></script>
+
     @livewireStyles
 
     <link rel="stylesheet" href="{{ mix('/assets/css/app.css') }}">
@@ -50,14 +52,14 @@ Paste this in `composer.json` file:
 
 <body>
 
-    {{-- Code here... --}}
+    @livewire('counter')
 
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer></script>
     <script src="{{ mix('/assets/js/app.js') }}"></script>
-    
-    @livewireScripts
 
+    @livewireScripts
+    
 </body>
 
 </html>
+
 ```
