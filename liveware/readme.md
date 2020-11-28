@@ -1,6 +1,6 @@
 # Install Livewire with Laravel 8
 
-#### Installation
+### Installation
 Install the package:
 ```bash
 composer require livewire/livewire
