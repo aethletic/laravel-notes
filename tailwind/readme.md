@@ -35,6 +35,22 @@ npm run prod
 @tailwind components;
 @tailwind utilities;
 @tailwind screens;
+
+@layer base {
+    
+}
+
+@layer components {
+    
+}
+
+@layer utilities {
+    
+}
+
+@layer screens {
+    
+}
 ```
 
 #### /resources/sass/app.css
@@ -42,6 +58,23 @@ npm run prod
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import "tailwindcss/screens";
+
+@layer base {
+    
+}
+
+@layer components {
+    
+}
+
+@layer utilities {
+    
+}
+
+@layer screens {
+    
+}
 ```
 
 #### /tailwind.config.js
