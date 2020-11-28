@@ -124,7 +124,7 @@ if (mix.inProduction()) {
 
 ```
 
-### /resources/views/index.blade.php
+#### /resources/views/index.blade.php
 ```blade
 <!DOCTYPE html>
 
