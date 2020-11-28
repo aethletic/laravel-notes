@@ -1,21 +1,22 @@
 # Install Livewire with Laravel 8
 
-Install the package.
+#### Installation
+Install the package:
 ```bash
 composer require livewire/livewire
 ```
 
-Publishing the config file.
+Publishing the config file:
 ```bash
 php artisan livewire:publish --config
 ```
 
-Publishing frontend assets.
+Publishing frontend assets:
 ```bash
 php artisan livewire:publish --assets
 ```
 
-`composer.json`
+Paste this in `composer.json` file:
 ```json
 ...
 {
