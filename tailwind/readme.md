@@ -19,7 +19,7 @@ npx tailwindcss init
 
 Finish by compiling your assets and you'll be ready.
 ```bash
-npm run watch
+npm run dev
 ```
 
 Or for purge unused css code.
@@ -122,4 +122,29 @@ if (mix.inProduction()) {
     mix.sourceMaps();
 }
 
+```
+
+### /resources/views/index.blade.php
+```blade
+<!DOCTYPE html>
+
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="{{ mix('/assets/css/app.css') }}">
+
+    <title>@yield('title') - Template</title>
+</head>
+    
+<body>
+        
+    {{-- Code here... --}}
+   
+    <script src="{{ mix('/assets/js/app.js') }}"></script>
+</body>
+
+</html>
 ```
