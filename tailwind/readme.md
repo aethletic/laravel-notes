@@ -136,7 +136,7 @@ if (mix.inProduction()) {
 
     <link rel="stylesheet" href="{{ mix('/assets/css/app.css') }}">
 
-    <title>@yield('title') - Template</title>
+    <title>@yield('title', 'Home') - Template</title>
 </head>
     
 <body>
