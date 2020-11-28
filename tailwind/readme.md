@@ -28,12 +28,19 @@ npm run prod
 ```
 
 ## Files
+
 #### /resources/css/app.css
 ```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;
+```
+
+#### /resources/sass/app.css
+```css
 @import "tailwindcss/base";
-
 @import "tailwindcss/components";
-
 @import "tailwindcss/utilities";
 ```
 
