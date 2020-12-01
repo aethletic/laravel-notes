@@ -3,6 +3,7 @@
 
 ## HOT Fix 01.12.2020 
 Actual if `laravel-mix` version **<** `6.0.0`.
+
 Replace to:
 ```json
 "laravel-mix": "^6.0.0-beta.14",
