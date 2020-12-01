@@ -2,7 +2,7 @@
 # Install Tailwind with Laravel 8
 
 ## HOT Fix 01.12.2020 
-Actually if `laravel-mix` version **<** `6.0.0`.
+Actual if `laravel-mix` version **<** `6.0.0`.
 Replace to:
 ```json
 "laravel-mix": "^6.0.0-beta.14",
