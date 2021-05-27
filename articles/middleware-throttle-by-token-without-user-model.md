@@ -18,7 +18,7 @@ use Illuminate\Http\Request;
 use Illuminate\Routing\Middleware\ThrottleRequests;
 use RuntimeException;
 
-class ApiThrottleMiddleware extends ThrottleRequests
+class TokenThrottleMiddleware extends ThrottleRequests
 {
     protected function resolveRequestSignature($request)
     {
