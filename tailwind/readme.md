@@ -39,6 +39,14 @@ npm run prod
 
 #### /resources/css/app.css
 ```css
+html {
+    font-family: "Rubik", sans-serif !important;
+}
+
+[x-cloak] {
+    display: none !important;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -63,6 +71,14 @@ npm run prod
 
 #### /resources/sass/app.css
 ```css
+html {
+    font-family: "Rubik", sans-serif !important;
+}
+
+[x-cloak] {
+    display: none !important;
+}
+
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
@@ -142,16 +158,25 @@ if (mix.inProduction()) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="{{ mix('/assets/css/app.css') }}">
 
-    <title>@yield('title', 'Home') - Template</title>
+    <title>@yield('title', 'Home') - {{ config('app.name') }}</title>
+
+    @yield('styles')
 </head>
-    
+
 <body>
-        
-    {{-- Code here... --}}
-   
+    @yield('content')
+
     <script src="{{ mix('/assets/js/app.js') }}"></script>
+
+    @yield('scripts')
 </body>
 
 </html>
