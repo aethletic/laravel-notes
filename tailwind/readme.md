@@ -190,6 +190,7 @@ if (mix.inProduction()) {
     <div class="flex flex-col h-screen">
         <header class="sticky top-0 h-16 border-b bg-white shrink-0 backdrop-blur bg-opacity-30 z-50">
             <div class="flex justify-between items-center h-full">
+                {{-- start: logo --}}
                 <div class="w-96">
                     <div class="px-8">
                         <div class="font-black text-lg uppercase">
@@ -197,18 +198,29 @@ if (mix.inProduction()) {
                         </div>
                     </div>
                 </div>
+                {{-- start: logo --}}
+
+                {{-- start: navbar --}}
                 <div class="flex justify-between flex-1 px-8">
+                    {{-- start: navbar left --}}
                     <div>
                         left
                     </div>
+                    {{-- end: navbar left --}}
+
+                    {{-- start: navbar right --}}
                     <div>
                         right
                     </div>
+                    {{-- end: navbar right --}}
                 </div>
+                {{-- end: navbar --}}
             </div>
         </header>
         <div class="flex-1 overflow-hidden">
             <div class="flex justify-between h-full">
+
+                {{-- start: left-side --}}
                 <aside class="h-full">
                     <div class="w-96 border-r h-full">
                         <div class="sticky top-0 p-8">
@@ -216,7 +228,9 @@ if (mix.inProduction()) {
                         </div>
                     </div>
                 </aside>
+                {{-- end: left-side --}}
 
+                {{-- start: content --}}
                 <main class="w-full py-8 overflow-y-auto">
                     <div class="max-w-3xl mx-auto">
                         @for ($i = 0; $i < 100; $i++)
@@ -224,7 +238,9 @@ if (mix.inProduction()) {
                         @endfor
                     </div>
                 </main>
+                {{-- end: content --}}
 
+                {{-- start: right-side --}}
                 <aside class="h-full">
                     <div class="w-96 border-l h-full">
                         <div class="sticky top-0 p-8">
@@ -232,6 +248,8 @@ if (mix.inProduction()) {
                         </div>
                     </div>
                 </aside>
+                {{-- end: right-side --}}
+
             </div>
         </div>
     </div>
