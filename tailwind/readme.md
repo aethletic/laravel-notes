@@ -181,3 +181,59 @@ if (mix.inProduction()) {
 
 </html>
 ```
+
+
+```blade
+@extends('layouts.app')
+
+@section('content')
+    <div class="flex flex-col h-screen">
+        <header class="sticky top-0 h-16 border-b bg-white shrink-0 backdrop-blur bg-opacity-30 z-50">
+            <div class="flex justify-between items-center h-full">
+                <div class="w-96">
+                    <div class="px-8">
+                        <div class="font-black text-lg uppercase">
+                            Пульс
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between flex-1 px-8">
+                    <div>
+                        left
+                    </div>
+                    <div>
+                        right
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="flex-1 overflow-hidden">
+            <div class="flex justify-between h-full">
+                <aside class="h-full">
+                    <div class="w-96 border-r h-full">
+                        <div class="sticky top-0 p-8">
+                            left side
+                        </div>
+                    </div>
+                </aside>
+
+                <main class="w-full py-8 overflow-y-auto">
+                    <div class="max-w-3xl mx-auto">
+                        @for ($i = 0; $i < 100; $i++)
+                            content<br>
+                        @endfor
+                    </div>
+                </main>
+
+                <aside class="h-full">
+                    <div class="w-96 border-l h-full">
+                        <div class="sticky top-0 p-8">
+                            right side
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+@endsection
+```
